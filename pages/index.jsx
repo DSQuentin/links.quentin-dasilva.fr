@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Components from "@/components/Components";
 import Seo from "@/components/Seo";
 import Link from "@/components/Link";
 import WebsiteIcon from "@/components/icons/WebsiteIcon";
@@ -43,7 +42,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
           <Seo />
         </Head>
-        <div className="max-w-2xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="max-w-2xl px-4 mx-auto sm:px-6 lg:px-24">
           <div className="py-6 space-y-4">
             {links.map((link) => (
               <Link key={link.name} {...link} />
