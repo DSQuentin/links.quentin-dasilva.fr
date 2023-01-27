@@ -43,12 +43,13 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
           <Seo />
         </Head>
-        <ul className="list-none">
-          {links.map((link) => (
-            <Link key={link.name} {...link} />
-          ))}
-        </ul>
-        <Components />
+        <div className="max-w-2xl px-4 mx-auto sm:px-6 lg:px-8">
+          <div className="py-6 space-y-4">
+            {links.map((link) => (
+              <Link key={link.name} {...link} />
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
