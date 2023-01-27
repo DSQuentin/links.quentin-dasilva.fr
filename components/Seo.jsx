@@ -7,7 +7,6 @@ function Seo() {
         name="description"
         content="Retrouvez tous les liens de mes réseaux."
       />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       <meta property="og:url" content="https://links.quentin-dasilva.fr/" />
       <meta property="og:type" content="website" />
