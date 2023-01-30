@@ -1,10 +1,11 @@
-import Head from "next/head";
-import Seo from "@/components/Seo";
-import Link from "@/components/Link";
-import WebsiteIcon from "@/components/icons/WebsiteIcon";
+import Header from "@/components/Header";
+import GithubIcon from "@/components/icons/GithubIcon";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import MaltIcon from "@/components/icons/MaltIcon";
-import GithubIcon from "@/components/icons/GithubIcon";
+import WebsiteIcon from "@/components/icons/WebsiteIcon";
+import Link from "@/components/Link";
+import Seo from "@/components/Seo";
+import Head from "next/head";
 
 export default function Home() {
   const links = [
@@ -36,12 +37,13 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen bg-gray-200">
+      <div className="min-h-screen ">
         <Head>
           <title>Quentin Da Silva | Liens</title>
           <link rel="icon" href="/favicon.ico" />
           <Seo />
         </Head>
+        <Header />
         <div className="max-w-2xl px-4 mx-auto sm:px-6 lg:px-24">
           <div className="py-6 space-y-4">
             {links.map((link) => (
