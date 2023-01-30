@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.background {
+  background: url(/imgs/bg01.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
