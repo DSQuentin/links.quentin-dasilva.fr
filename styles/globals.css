@@ -6,3 +6,12 @@
   background: url(/imgs/bg01.jpg) no-repeat center center fixed;
   background-size: cover;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul > li {
+  backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}

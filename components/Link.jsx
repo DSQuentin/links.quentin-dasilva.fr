@@ -2,21 +2,19 @@ import React from "react";
 
 function Link({ alt, name, url, Icon }) {
   return (
-    <div className="flex flex-col justify-center">
+    <li className="bg-[#fffa] rounded-[10em] p-[1em] my-[1.4em] mx-0 shadow-custom">
       <a
         href={url}
         alt={alt}
         target="_blank"
         rel="nofollow noopener noreferrer"
-        className="flex items-center bg-white justify-center w-full p-4 text-xl rounded-lg cursor-pointer hover:backdrop-opacity-80 transition duration-300 ease-in-out transform  hover:-translate-y-0.5 hover:scale-102"
+        className="flex flex-row items-center justify-center gap-[0.5em] text-black"
       >
-        <div className="mr-4">
-          <Icon />
-        </div>
+        <Icon />
 
         {name}
       </a>
-    </div>
+    </li>
   );
 }
 

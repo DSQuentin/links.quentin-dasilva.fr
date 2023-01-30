@@ -44,13 +44,11 @@ export default function Home() {
           <Seo />
         </Head>
         <Header />
-        <div className="max-w-2xl px-4 mx-auto sm:px-6 lg:px-24">
-          <div className="py-6 space-y-4">
-            {links.map((link) => (
-              <Link key={link.name} {...link} />
-            ))}
-          </div>
-        </div>
+        <ul className="box-border list-none my-0 mx-auto p-[2em]">
+          {links.map((link) => (
+            <Link key={link.name} {...link} />
+          ))}
+        </ul>
       </div>
     </>
   );
