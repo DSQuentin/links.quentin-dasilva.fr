@@ -48,9 +48,9 @@ export default function Home() {
             el: "#vanta",
             mouseControls: true,
             touchControls: true,
-            gyroControls: false,
-            minHeight: 300.00,
-            minWidth: 300.00,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
             color: 0xf7f7f7,
@@ -62,6 +62,17 @@ export default function Home() {
                         `,
           }}
         />
+
+        <Script id="main">
+          {`
+        setTimeout(() => {
+            const main = document.querySelector('main');
+            main.style.opacity = 1;
+            main.style.filter = 'blur(0)';
+        }, 1000);
+              `}
+        </Script>
+
         <Head>
           <title>Quentin Da Silva | Liens</title>
           <link rel="icon" href="/favicon.ico" />
@@ -70,12 +81,14 @@ export default function Home() {
           <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
         </Head>
 
-        <Header />
-        <ul className="box-border list-none my-0 mx-auto p-[2em] max-w-[480px]">
-          {links.map((link) => (
-            <Link key={link.name} {...link} />
-          ))}
-        </ul>
+        <main>
+          <Header />
+          <ul className="box-border list-none my-0 mx-auto p-[2em] max-w-[480px]">
+            {links.map((link) => (
+              <Link key={link.name} {...link} />
+            ))}
+          </ul>
+        </main>
       </div>
     </>
   );
