@@ -75,7 +75,42 @@ export default function Home() {
 
         <Head>
           <title>Quentin Da Silva | Liens</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="https://links.quentin-dasilva.fr/imgs/favicons/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://links.quentin-dasilva.fr/imgs/favicons/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="https://links.quentin-dasilva.fr/imgs/favicons/favicon-16x16.png"
+          />
+          <link
+            rel="manifest"
+            href="https://links.quentin-dasilva.fr/imgs/favicons/site.webmanifest"
+          />
+          <link
+            rel="mask-icon"
+            href="https://links.quentin-dasilva.fr/imgs/favicons/safari-pinned-tab.svg"
+            color="#5bbad5"
+          />
+          <link
+            rel="shortcut icon"
+            href="https://links.quentin-dasilva.fr/imgs/favicons/favicon.ico"
+          />
+          <meta name="msapplication-TileColor" content="#0b022d" />
+          <meta
+            name="msapplication-config"
+            content="https://links.quentin-dasilva.fr/imgs/favicons/browserconfig.xml"
+          />
+          <meta name="theme-color" content="#0b022d" />
           <Seo />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
