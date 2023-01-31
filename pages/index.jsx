@@ -53,10 +53,10 @@ export default function Home() {
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            color: 0xf7f7f7,
+            color: 0xae71eb,
             backgroundAlpha: 0.00,
-            points: 8.00,
-            maxDistance: 21.00,
+            points: 16.00,
+            maxDistance: 18.00,
             spacing: 18.00          
           })
                         `,
